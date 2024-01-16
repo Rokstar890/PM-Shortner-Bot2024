@@ -1029,7 +1029,6 @@ def get_media_from_message(message: "Message"):
         "voice",
         "video_note",
     )
-
     for attr in media_types:
         if media := getattr(message, attr, None):
             return media
